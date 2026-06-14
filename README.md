@@ -27,14 +27,6 @@ If the configuration file is named `config.luyreby`, then use the following comm
 PS C:\Users\YourName> luyre.exe config.luyreby
 ```
 
-如果需要，可以额外加上一个提示信息翻译文件，例如：`logbook.lang`。
-
-If needed, you can also add an extra hint information translation file, for example: `logbook.lang`.
-
-```
-PS C:\Users\YourName> luyre.exe config.luyreby logbook.lang
-```
-
 ## 配置文件Configuration file
 
 配置文件使用后缀`.luyreby`。
