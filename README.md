@@ -2,7 +2,7 @@
 
 Luyre（玥语言），编译型编程语言，一个”面向语法“编程的尝试。
 
-Compiled programming languages, an attempt at syntax-oriented programming.
+Luyre: A compiled programming language, which is an attempt at syntax-oriented programming.
 
 > &#9888;还在设计，请等待。Still designing, please wait.
 
@@ -33,9 +33,7 @@ PS C:\Users\YourName> luyre.exe config.luyreby
 
 Configuration files use the `.luyreby` extension.
 
-```
-&#9888;待续
-```
+> &#9888;待续
 
 ## 提示信息翻译文件Prompt message translation file
 
