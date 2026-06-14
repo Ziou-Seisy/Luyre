@@ -1,10 +1,12 @@
+> &#9888;代码还在写，现在还没写到词法分析器，好伤心555\~
+> 
+> The code is still being written, and I haven't gotten to the lexer yet. So sad 555\~
+
 # Luyre
 
 Luyre（玥语言），编译型编程语言，一个”面向语法“编程的尝试。
 
 Luyre: A compiled programming language, which is an attempt at syntax-oriented programming.
-
-> &#9888;还在设计，请等待。Still designing, please wait.
 
 > 以下是Luyre相关信息。Here's some information about Luyre.
 
