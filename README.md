@@ -24,7 +24,7 @@ Usually, it needs a configuration file as a command-line argument.
 If the configuration file is named `config.luyreby`, then use the following command in the command line.
 
 ```
-PS C:\Users\YourName> luyre.exe config.luyreby
+PS C:\Users> luyre.exe config.luyreby
 ```
 
 ## 配置文件Configuration file
