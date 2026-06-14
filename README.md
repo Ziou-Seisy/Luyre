@@ -29,11 +29,15 @@ PS C:\Users> luyre.exe config.luyreby
 
 ## 配置文件Configuration file
 
-配置文件使用后缀`.luyreby`。
+配置文件使用后缀`.luyreby`，最简单的配置文件如下所示：
 
-Configuration files use the `.luyreby` extension.
+Configuration files use the `.luyreby` extension. The simplest configuration file looks like this:
 
-> &#9888;待续
+```
+Luyre 0.3.0
+LogBook logbook.lang
+File 0.out 1.luyre 2.luyre
+```
 
 ## 提示信息翻译文件Prompt message translation file
 
@@ -53,4 +57,16 @@ For each line, there’s a fixed format. For the code A1001, there are replaceme
 ```
 # English
 A1001=This is a prompt message, with parameters {1} and {2}.
+```
+
+事实上，可以使用转义字符（使得控制台有颜色）。
+
+```
+I1000=这里是\033[;36m{1}\033[0m!!!
+```
+
+In fact, you can use escape characters (to give the console some color).
+
+```
+I1000=Here is \033[;36m{1}\033[0m!!!
 ```
