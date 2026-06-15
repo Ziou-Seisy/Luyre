@@ -26,9 +26,34 @@ Usually, it needs a configuration file as a command-line argument.
 If the configuration file is named `config.luyreby`, then use the following command in the command line.
 
 ```
-PS C:\Users> luyre.exe config.luyreby
+C:\Users> luyre.exe config.luyreby
 ```
 
+#### 无命令行参数No command line arguments
+
+如果不输入参数，则会得到：
+
+If you don't enter any parameters, you'll get:
+
+```
+C:\Users> luyre.exe
+ _
+| |     _   _   _   _   _ __   ___
+| |    | | | | | | | | | '__| / _ \
+| |___ | |_| | | |_| | | |   |  __/
+|_____| \__,_|  \__, | |_|    \___|
+                |___/
+Luyre   : A compiled programming language.
+Version : a.b.c [Build: Mon dd yyyy hh:mm:ss]
+----------------------------------------------------
+If the configuration file is named config.luyreby,
+then use the following command in the command line:
+ˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋ
+        C:\Users> luyre.exe config.luyreby
+
+ˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋ
+
+```
 ## 配置文件Configuration file
 
 配置文件使用后缀`.luyreby`，最简单的配置文件如下所示：
@@ -36,7 +61,7 @@ PS C:\Users> luyre.exe config.luyreby
 Configuration files use the `.luyreby` extension. The simplest configuration file looks like this:
 
 ```
-Luyre 0.3.0
+Luyre 0.5.0
 LogBook logbook.lang
 File 0.out 1.luyre 2.luyre
 ```
@@ -71,4 +96,12 @@ In fact, you can use escape characters (to give the console some color).
 
 ```
 I1000=Here is \033[;36m{1}\033[0m!!!
+```
+
+你也可以使用注释，通过#符号。
+
+You can also use comments with the # symbol.
+
+```
+# ...
 ```
