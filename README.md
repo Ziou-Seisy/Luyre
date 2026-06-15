@@ -1,12 +1,18 @@
-> &#9888;代码还在写，现在还没写到词法分析器，好伤心555\~
+> &#9888;代码还在写，写了6天才写完交互框架，现在还没写到词法分析器，好伤心555\~
 > 
-> The code is still being written, and I haven't gotten to the lexer yet. So sad 555\~
+> The code is still being written.
+>
+> It took 6 days just to finish the interaction framework,
+>
+> and I haven't even started the lexical analyzer yet.
+>
+> So sad 555\~
 
 # Luyre
 
-Luyre（玥语言），编译型编程语言，一个”面向语法“编程的尝试。
+**Luyre（玥语言）**，编译型编程语言，一个”面向语法“编程的尝试。
 
-Luyre: A compiled programming language, which is an attempt at syntax-oriented programming.
+**Luyre**: A compiled programming language, which is an attempt at syntax-oriented programming.
 
 > 以下是Luyre相关信息。Here's some information about Luyre.
 
@@ -54,6 +60,7 @@ then use the following command in the command line:
 ˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋˋ
 
 ```
+
 ## 配置文件Configuration file
 
 配置文件使用后缀`.luyreby`，最简单的配置文件如下所示：
@@ -63,6 +70,18 @@ Configuration files use the `.luyreby` extension. The simplest configuration fil
 ```
 Luyre 0.5.0
 LogBook logbook.lang
+File 0.out 1.luyre 2.luyre
+```
+
+### 文件组File group
+
+在配置文件中，文件组行是形如以下形式的一行，当唯一的输出文件为`0.out`，多个输入文件为`1.in`, `2.in`, ...时：
+
+In the configuration file, a file group line looks like this,
+
+when the only output file is `0.out` and there are multiple input files like `1.in`, `2.in`, ...:
+
+```
 File 0.out 1.luyre 2.luyre
 ```
 
@@ -86,13 +105,13 @@ For each line, there’s a fixed format. For the code A1001, there are replaceme
 A1001=This is a prompt message, with parameters {1} and {2}.
 ```
 
-事实上，可以使用转义字符（使得控制台有颜色）。
+事实上，可以使用转义字符（例如`\033`，使得控制台有颜色）。
 
 ```
 I1000=这里是\033[;36m{1}\033[0m!!!
 ```
 
-In fact, you can use escape characters (to give the console some color).
+In fact, you can use escape characters (to give the console some color with `\033`).
 
 ```
 I1000=Here is \033[;36m{1}\033[0m!!!
