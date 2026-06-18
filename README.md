@@ -2,6 +2,8 @@
 > 
 > The code is still being written, and I haven't gotten to the lexer yet. So sad 555\~
 
+[最新代码仓库Latest code repository](https://github.com/Ziou-Seisy/Luyre/tree/Framework)
+
 # Luyre（玥语言）
 
 Luyre（玥语言），编译型编程语言，一个“面向语法”编程的尝试。
