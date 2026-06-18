@@ -18,7 +18,7 @@ Grammar-oriented programming is an attempt at a new programming paradigm, trying
 
 ## 浅谈已有的编程范式A Brief Talk on Existing Programming Paradigms
 
-编程范式是一种基本的编程风格或方法，遵循一系列特定的概念、原则和实践。
+编程范式是一类编程风格或方法，其遵循一系列特定的概念、原则和实践。
 
 A programming paradigm is a basic style or approach to programming that follows a set of specific concepts, principles, and practices. 
 
@@ -26,9 +26,11 @@ A programming paradigm is a basic style or approach to programming that follows 
 
 ### 指令式编程|命令式编程 IP:Imperative programming
 
-> 在一定程度上To some extent：C、C++、Java、Python
+> 在一定程度上To some extent：C、C++、Java、Python、Minecraft Command Block
 
-描述改变程序状态的一系列步骤。A series of steps that change the program's state.
+指令式编程：要谁去干什么。
+
+A series of steps that change the program's state.
 
 支持语句形式：Supported statement forms:
 
@@ -41,13 +43,15 @@ def func(arg_list){ doing; return ret }; func(arg_expression)
 
 ### 声明式编程 DP:Declarative programming
 
-强调表达逻辑和功能，而不明确描述控制流。Focus on expressing logic and functionality, without clearly describing the control flow.
+声明式编程：要什么。
+
+Focus on expressing logic and functionality, without clearly describing the control flow.
 
 #### 函数式编程 FP:Functional programming
 
 > 在一定程度上To some extent：Haskell、Lisp、Erlang、JavaScript、Python、Scala
 
-将计算视为数学函数的评估，强调使用不可变数据和声明式表达。
+ 函数式编程：万物皆可函数。
 
 View computation as the evaluation of mathematical functions and emphasize using immutable data and declarative expressions.
 
@@ -66,7 +70,7 @@ def higherFunc(func,val){ return func(val) }
 
 > 在一定程度上To some extent：MiniZinc、Groubi、Python with CPMpy、Google OR-Tools、Microsoft Z3-Solver、IBM CPLEX
 
-变量之间的关系是在约束中说明的，定义了问题的解的范围。这些约束然后被应用程序来求解，以使得每个变量获得一个值，并让最多的约束得到满足。
+约束式编程：列方程求解。
 
 The relationships between variables are described in constraints, which define the range of solutions for the problem. These constraints are then used by the application to solve it, so that each variable gets a value and as many constraints as possible are satisfied.
 
@@ -80,7 +84,9 @@ status = solver.solve(mod)
 
 > 在一定程度上 To some extent：Prolog
 
-声明关系并且对关系进行提问。State a relationship and ask questions about it.
+逻辑式编程：声明、提问。
+
+State a relationship and ask questions about it.
 
 支持语句形式：Supported statement forms:
 
@@ -107,6 +113,19 @@ Option arg_expression
 ```
 
 ### 面向对象编程（OOP）
+
+面向对象编程：把数据和方法放在一起。
+
+Abstract things into objects, give objects attributes and methods, and let each object execute its own methods to solve the problem.
+
+支持语句形式：Supported statement forms:
+
+```
+class OBJ { public: Type val; def func(arg_list){}; OBJ(arg_list){} }; OBJ obj {arg_exp};
+obj.func(arg_exp); func(obj.val)
+class SUB_OBJ : protected OBJ {}; SUB_OBJ sub;
+OBJ& p = sub;
+```
 
 ### 面向切面编程（AOP）
 
