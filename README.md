@@ -78,7 +78,15 @@ status = solver.solve(mod)
 > 
 > yacc (parser), Make (build instruction), Puppet (configuration management), regular expressions, SQL (Select queries, etc.)
 
-> 此外，很多文本标记语言Besides, a lot of markup languages：HTML、MXML、XAML、XSLT、[FNP_LightML](https://github.com/Ziou-Seisy/FNP_LightML)
+> 此外，很多文本标记语言Besides, a lot of markup languages：HTML、MXML、XAML、XSLT、MarkDown、[FNP_LightML](https://github.com/Ziou-Seisy/FNP_LightML)、CSS、json
+
+支持语句形式：Supported statement forms:
+
+```
+<Tag option="val"></Tag>
+Option arg_list
+"key":"val"
+```
 
 ### 面向对象编程（OOP）
 
