@@ -33,18 +33,52 @@ A programming paradigm is a basic style or approach to programming that follows 
 支持语句形式：Supported statement forms:
 
 ```
-
+result = expression
+while(condition){ doing }
+if(condition){ doing }else{ doing_else }
+func(arg_list)
 ```
 
 ### 声明式编程 DP:Declarative programming
 
-> 在一定程度上To some extent：Haskell、Lisp、Erlang、JavaScript、Python、Scala 
-
 强调表达逻辑和功能，而不明确描述控制流。Focus on expressing logic and functionality, without clearly describing the control flow.
 
-**函数式编程**是声明式编程的一种流行形式，它将计算视为数学函数的评估，强调使用不可变数据和声明式表达。
+#### 函数式编程 FP:Functional programming
 
-**Functional programming (FP)** is a popular form of declarative programming that views computation as the evaluation of mathematical functions and emphasizes using immutable data and declarative expressions.
+> 在一定程度上To some extent：Haskell、Lisp、Erlang、JavaScript、Python、Scala
+
+将计算视为数学函数的评估，强调使用不可变数据和声明式表达。
+
+View computation as the evaluation of mathematical functions and emphasize using immutable data and declarative expressions.
+
+支持语句形式：Supported statement forms:
+
+```
+
+```
+
+#### 约束式编程 CP:Constraint Programming
+
+> 在一定程度上To some extent：MiniZinc、Groubi、Python with CPMpy、Google OR-Tools、Microsoft Z3-Solver、IBM CPLEX
+
+变量之间的关系是在约束中说明的，定义了问题的解的范围。这些约束然后被应用程序来求解，以使得每个变量获得一个值，并让最多的约束得到满足。
+
+The relationships between variables are described in constraints, which define the range of solutions for the problem. These constraints are then used by the application to solve it, so that each variable gets a value and as many constraints as possible are satisfied.
+
+支持语句形式：Supported statement forms:
+
+```
+mod.add(Constraints)
+status = solver.solve(mod)
+```
+
+#### 领域专属语言 DSL:Domain-specific language
+
+> 在一定程度上 To some extent：yacc（语法分析器）、Make（编译说明）、Puppet（管理配置）、正则表达式、SQL（Select queries等）
+> 
+> yacc (parser), Make (build instruction), Puppet (configuration management), regular expressions, SQL (Select queries, etc.)
+
+> 此外，很多文本标记语言Besides, a lot of markup languages：HTML、MXML、XAML、XSLT、[FNP_LightML](https://github.com/Ziou-Seisy/FNP_LightML)
 
 ### 面向对象编程（OOP）
 
