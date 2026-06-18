@@ -36,7 +36,7 @@ A programming paradigm is a basic style or approach to programming that follows 
 result = expression
 while(condition){ doing }
 if(condition){ doing }else{ doing_else }
-func(arg_list)
+def func(arg_list){ doing; return ret }; func(arg_expression)
 ```
 
 ### 声明式编程 DP:Declarative programming
@@ -54,7 +54,12 @@ View computation as the evaluation of mathematical functions and emphasize using
 支持语句形式：Supported statement forms:
 
 ```
-
+func = (arg_list)=>{ doing; return ret }
+def loop(arg_list){ doing; return loop(arg_expression)}
+array.map(callbackFn); array.reduce(callbackFn, initialValue)
+result = (Pip(val) | func).result()
+def curry(val){ return (x)=>func(val,x) }
+def higherFunc(func,val){ return func(val) }
 ```
 
 #### 约束式编程 CP:Constraint Programming
@@ -71,6 +76,19 @@ The relationships between variables are described in constraints, which define t
 mod.add(Constraints)
 status = solver.solve(mod)
 ```
+#### 逻辑式编程
+
+> 在一定程度上 To some extent：Prolog
+
+声明关系并且对关系进行提问。State a relationship and ask questions about it.
+
+支持语句形式：Supported statement forms:
+
+```
+Fact(val_expression)
+Rule(arg_list) :- expression
+?- Rule(arg_expression)
+```
 
 #### 领域专属语言 DSL:Domain-specific language
 
@@ -84,7 +102,7 @@ status = solver.solve(mod)
 
 ```
 <Tag option="val"></Tag>
-Option arg_list
+Option arg_expression
 "key":"val"
 ```
 
